@@ -7,7 +7,7 @@ Umami Self Hosted Analytics Cloud VPS ☁ Configuration 🔧
 ## Requirements
 
 - Cloud VPS
-- OS - Ubuntu 20.04
+- OS - Ubuntu 20.04 LTS
 - Node.JS LTS Version
 - MYSQL 8
 - Nginx + Reverse Proxy
@@ -36,6 +36,10 @@ npm run build
 ```sh
 npm start
 ```
+
+- Bash script for start the app via systemd service - <https://github.com/mskian/umami-conf/blob/master/start.sh>
+- create systemd service for Run the App forever - <https://github.com/mskian/umami-conf/blob/master/stats.service>
+- Nginx + Reverse Proxy + SSL Setup <https://github.com/mskian/umami-conf/blob/master/stats.conf>
 
 ## LICENSE
 
