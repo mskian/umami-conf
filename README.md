@@ -25,6 +25,28 @@ cd umami
 npm install
 ```
 
+- Create database tables
+
+```sh
+cd /var/www/umami
+mysql -u username -p databasename < sql/schema.mysql.sql
+```
+
+- Create `.env` file for database connection and Hash salt
+
+```sh
+DB_USER=username
+DB_PASSWORD=password
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=databasename
+DATABASE_URL=mysql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
+
+HASH_SALT=somerandomstring
+```
+
+> Generate Hash Salt from - <https://bitwarden.com/password-generator/>
+
 - Build the Package
 
 ```sh
