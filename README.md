@@ -32,7 +32,7 @@ cd /var/www/umami
 mysql -u username -p databasename < sql/schema.mysql.sql
 ```
 
-- Create `.env` file for database connection and Hash salt
+- Create `.env` file for database connection and Hash salt in the umami cloned/downloaded Folder `/var/www/umami`
 
 ```sh
 DB_USER=username
