@@ -69,6 +69,16 @@ npm start
 - create systemd service for Run the App forever - <https://github.com/mskian/umami-conf/blob/master/stats.service>
 - Nginx + Reverse Proxy + SSL Setup <https://github.com/mskian/umami-conf/blob/master/stats.conf>
 
+## Firewall
+
+if you enabled the ufw on your Server then allow the umami port and MYSQL port
+
+```sh
+ufw allow 3000
+ufw allow mysql
+ufw reload
+```
+
 ## LICENSE
 
 MIT
