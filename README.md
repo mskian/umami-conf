@@ -4,6 +4,8 @@ Umami Self Hosted Analytics Cloud VPS ☁ Configuration 🔧
 
 > Umami is a simple, fast, website analytics alternative to Google Analytics.
 
+Install and Setup Umami on Ubuntu Cloud VPS Server ⚙
+
 ## Requirements
 
 - Cloud VPS
