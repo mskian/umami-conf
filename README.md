@@ -13,6 +13,7 @@ Umami Self Hosted Analytics Cloud VPS ☁ Configuration 🔧
 - Nginx + Reverse Proxy
 - Certbot for Free SSL
 - Systemd Service for Run the APP Permanently
+- Git for Clone and Update the Software
 
 ## installation
 
@@ -33,6 +34,11 @@ mysql -u username -p databasename < sql/schema.mysql.sql
 ```
 
 - Create `.env` file for database connection and Hash salt in the umami cloned/downloaded Folder `/var/www/umami`
+
+```sh
+touch .env
+nano .env
+```
 
 ```sh
 DB_USER=username
